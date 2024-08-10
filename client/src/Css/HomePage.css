@@ -1,0 +1,365 @@
+/* HomePage.css */
+/* CSS Reset */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.homeheader {
+  background-color: #ffdb4d;
+  color: #fff;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+}
+
+.homeheader .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+}
+
+.homeheader .logo img {
+  height: 50px;
+}
+
+.homeheader nav ul {
+  list-style: none;
+  display: flex;
+}
+
+.homeheader nav ul li {
+  margin-right: 20px;
+}
+
+.homeheader nav ul li a {
+  text-decoration: none;
+  color: #080808;
+  font-size: 18px;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.homeheader nav ul li a:hover {
+  color: #faf8f8; /* color change on hover */
+  transform: scale(1.1); /* zoom effect */
+}
+
+.user-account button {
+  padding: 10px 20px;
+  background-color: #fff;
+  color: #ff9900;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.user-account button:hover {
+  background-color: #ff9900;
+  color: #fff;
+}
+
+.hero {
+  margin-top: 80px; /* Adjusting for fixed header */
+  /* background-image: linear-gradient(to bottom , #ffc300,#fbda03); */
+  background-color: papayawhip;
+  color: #fff;
+  padding: 100px 0;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+  color: #080808;
+}
+
+.hero p {
+  font-size: 24px;
+  margin-bottom: 40px;
+  color: #080808;
+}
+
+.cta-button {
+  padding: 10px 20px;
+  background-color: #fff;
+  color: #ff9900;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-size: large;
+}
+
+.cta-button:hover {
+  background-color: #ff9900;
+  color: #fff;
+  transform: translateY(-2px);
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 15px 0;
+  text-align: center;
+}
+
+footer p {
+  margin: 0;
+}
+
+/* Add animation */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Apply animation to features */
+.features .feature {
+  animation: fadeInUp 0.5s ease forwards;
+}
+::-webkit-scrollbar {
+  width: 8px; /* Thin scrollbar */
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1; /* color of the track */
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgb(0, 0, 0); /* color of the scrollbar */
+  border-radius: 6px; /* roundness of the scrollbar thumb */
+  border: 2px solid transparent; /* border to create a single dot appearance */
+}
+/* HomePage.css */
+
+/* Feature Section */
+.feature {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 50px 0;
+}
+
+.feature.alternate {
+  flex-direction: row-reverse;
+}
+
+.feature .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.feature .feature-details {
+  flex: 1;
+  max-width: 50%;
+  padding: 0 20px;
+}
+
+.feature .feature-details h2 {
+  font-size: 32px;
+  margin-bottom: 10px;
+  color: #080808;
+}
+
+.feature .feature-details p {
+  font-size: 18px;
+  color: #080808;
+  text-align: justify;
+}
+
+.feature .feature-image {
+  flex: 1;
+  max-width: 50%;
+}
+
+.feature .feature-image img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* HomePage.css */
+
+/* About Us Section */
+.about-us {
+  background-color: #f9f9f9;
+  padding: 50px 0;
+}
+
+.about-us .container {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.about-us h2 {
+  font-size: 36px;
+  margin-bottom: 30px;
+  color: #080808;
+}
+
+.about-us p {
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  color: #080808;
+  text-align: justify;
+}
+.team {
+  padding: 50px 0;
+}
+
+.team h2 {
+  text-align: center;
+}
+
+.team-cards {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 30px;
+}
+
+.team-card {
+  width: 30%;
+  text-align: center;
+}
+
+.team-card img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+  object-fit: contain;
+}
+
+.team-card h3 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.team-card p {
+  font-size: 1em;
+}
+/* Add this CSS to your HomePage.css file */
+
+/* Contact Us Section */
+.contact-us {
+  background-color: #f7f7f7;
+  padding: 50px 0;
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+}
+
+.contact-us h2 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+/* Contact Form */
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.form-group textarea {
+  height: 150px;
+}
+
+.submit-btn {
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  background-color: #007bff;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.submit-btn:hover {
+  background-color: #0056b3;
+}
+
+/* Hamburger Menu Styles */
+.menu-toggle {
+  display: none; /* Hide by default for larger screens */
+}
+
+@media (max-width: 768px) {
+  .homeheader .container {
+    flex-direction: column;
+    align-items: flex-start; /* Align items to the left */
+    height: auto;
+  }
+
+  .homeheader nav ul {
+    flex-direction: column;
+    width: 100%;
+    margin-top: 20px;
+    display: none; /* Hide navigation links by default */
+    background-color: #ffdb4d;
+    padding: 10px;
+    position: absolute;
+    top: 60px;
+    left: 0;
+  }
+
+  .homeheader nav ul.active {
+    display: flex; /* Show navigation links when active */
+  }
+
+  .homeheader nav ul li {
+    margin: 10px 0;
+  }
+
+  .menu-toggle {
+    display: block; /* Display hamburger icon */
+    cursor: pointer;
+    font-size: 24px;
+    margin-right: 20px;
+  }
+}
+.coming-soon-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f8f9fa; /* Light grey background color */
+  font-family: Arial, sans-serif;
+}
+
+.coming-soon-container h1 {
+  font-size: 3rem;
+  color: #333; /* Dark grey text color */
+}
