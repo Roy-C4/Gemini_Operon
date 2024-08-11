@@ -17,6 +17,7 @@ const SignUpPage = () => {
   const [dob, setdob] = useState("");
   // const [about, setabout] = useState("");
   const [showPassword, setShowPassword] = useState(false);
+  const [regDisabled, setRegDisabled] = useState(false);
   const togglePasswordVisibility = () => {
     setShowPassword(!showPassword);
   };
@@ -38,11 +39,12 @@ const SignUpPage = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    if (avatarFile === null) {
-      toast.error("Image is needed!!");
+    if (avatarFile === null || username==="" ||email===""||dob==="") {
+      toast.error("Image and all texfield values are necessary!!");
       return;
     }
     try {
+      setRegDisabled(true);
       const formData = new FormData();
       formData.append("username", username);
       formData.append("password", password);
@@ -211,6 +213,7 @@ const SignUpPage = () => {
                     color="warning"
                     size="medium"
                     variant="contained"
+                    disabled={regDisabled}
                     onClick={handleSubmit}
                   >
                     Register
