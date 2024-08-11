@@ -8,7 +8,9 @@
 ## Installation Instructions
 
 1. **Clone the Git repository:**
+   ```bash
    git clone https://github.com/Roy-C4/Gemini_Operon.git
+   ```
    
 2. **Create a database in PostgreSQL:**
    - Name the database `operon`.
@@ -42,20 +44,26 @@
 6. **Install and start the socket server:**
    - Open a terminal in the `socket` directory.
    - Run the following commands:
+     ```bash
      npm install
      node index.js
+     ```
 
 7. **Install and start the Express server:**
    - Open another terminal in the `server` directory.
    - Run the following commands:
+     ```bash
      npm install
      node index.js
+     ```
 
 8. **Install and start the client application:**
    - Open a terminal in the `client` directory.
    - Run the following commands:
+     ```bash
      npm install
      npm start
+     ```
 
 ## App Usage Instructions
 
